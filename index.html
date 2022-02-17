@@ -5,7 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+        <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -16,13 +23,13 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title> Responsive portfolio website Ansel </title>
+        <title>Inicio - Porfolio</title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Ansel</a>
+                <a href="#" class="nav__logo">Portfolio</a>
 
                 <div class="nav__menu">
                     <ul class="nav__list">
@@ -70,13 +77,13 @@
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__greeting">Hello I'm</span>
-                        <h1 class="home__name">Ansel Klee</h1>
-                        <h3 class="home__education">Frontend Developer</h3>
+                        <span class="home__greeting">Hola soy</span>
+                        <h1 class="home__name">Daniela Peralvo</h1>
+                        <h3 class="home__education">Fotógrafa Profesional</h3>
 
                         <div class="home__buttons">
-                            <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">Download CV</a>
-                            <a href="#about" class="button">About me</a>
+                            <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">Ver Galeria</a>
+                            <a href="#about" class="button">Sobre mi</a>
                         </div>
                     </div>
 
@@ -98,15 +105,15 @@
 
                     <a href="#about" class="home__scroll">
                         <i class='bx bx-mouse home__scroll-icon' ></i>
-                        <span class="home__scroll-name">Scroll Down</span>
+                        <span class="home__scroll-name">Deslizar</span>
                     </a>
                 </div>
             </section>
             
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
-                <span class="section__subtitle">My Intro</span>
-                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Un poco</span>
+                <h2 class="section__title">Sobre mi</h2>
 
                 <div class="about__container container grid">
                     <img src="assets/img/about.jpg" alt="" class="about__img">
@@ -115,14 +122,14 @@
                         <div class="about__info">
                             <div class="about__box">
                                 <i class='bx bx-award about__icon'></i>
-                                <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">8 Years Working</span>
+                                <h3 class="about__title">Experiencia</h3>
+                                <span class="about__subtitle">4 Years Working</span>
                             </div>
     
                             <div class="about__box">
                                 <i class='bx bx-briefcase-alt about__icon'></i>
-                                <h3 class="about__title">Completed</h3>
-                                <span class="about__subtitle">42+ Projects</span>
+                                <h3 class="about__title">Completados</h3>
+                                <span class="about__subtitle">26+ Proyectos</span>
                             </div>
     
                             <div class="about__box">
@@ -133,19 +140,19 @@
                         </div>
 
                         <p class="about__description">
-                            Frontend developer, I create web pages with UI / UX user interface,
-                            I have years of experience and many clients are happy with the projects carried out.
+                            Edición y composición fotográfica en formato digital, filmación de clips y spots.
+                            Varios años de experiencia y muchos clientes están contentos con los proyectos realizados.
                         </p>
 
-                        <a href="#contact" class="button">Contact Me</a>
+                        <a href="#contact" class="button">Contactar</a>
                     </div>
                 </div>
             </section>
 
             <!--=============== SKILLS ===============-->
             <section class="skills section" id="skills">
-                <span class="section__subtitle">My habilities</span>
-                <h2 class="section__title">My experience</h2>
+                <span class="section__subtitle">Habilidades y</span>
+                <h2 class="section__title">Experiencia</h2>
 
                 <div class="skills__container container grid">
                     <div class="skills__content">
@@ -280,8 +287,8 @@
 
             <!--=============== SERVICES ===============-->
             <section class="services section">
-                <span class="section__subtitle">My Services</span>
-                <h2 class="section__title">What I Offer</h2>
+                <span class="section__subtitle">What I Offer</span>
+                <h2 class="section__title">Servicios</h2>
 
                 <div class="services__container container grid">
                     <div class="services__card">
@@ -416,14 +423,14 @@
 
             <!--=============== WORK ===============-->
             <section class="work section" id="work">
-                <span class="section__subtitle">My Portfolio</span>
-                <h2 class="section__title">Recent Works</h2>
+                <span class="section__subtitle">Mi Portfolio</span>
+                <h2 class="section__title">Trabajos Recientes</h2>
 
                 <div class="work__filters">
-                    <span class="work__item active-work" data-filter="all" >All</span>
+                    <span class="work__item active-work" data-filter="all" >Todo</span>
                     <span class="work__item" data-filter=".web">Web</span>
                     <span class="work__item" data-filter=".movil">Movil</span>
-                    <span class="work__item" data-filter=".design">Design</span>
+                    <span class="work__item" data-filter=".design">Diseño</span>
                 </div>
 
                 <div class="work__container container grid">
@@ -471,8 +478,8 @@
 
             <!--=============== TESTIMONIALS ===============-->
             <section class="testimonial section">
-                <span class="section__subtitle">My clients say</span>
-                <h2 class="section__title">Testimonials</h2>
+                <span class="section__subtitle">Anteriores Clientes</span>
+                <h2 class="section__title">Testimonios</h2>
 
                 <div class="testimonial__container container swiper">
                     <div class="swiper-wrapper">
@@ -508,11 +515,11 @@
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
                 <span class="section__subtitle">Get in touch</span>
-                <h2 class="section__title">Contact Me</h2>
+                <h2 class="section__title">Contactar</h2>
 
                 <div class="contact__container container grid">
                     <div class="contact__Content">
-                        <h3 class="contact__title">Talk to me</h3>
+                        <h3 class="contact__title">Social</h3>
 
                         <div class="contact__info">
                             <div class="contact__card">
@@ -528,7 +535,7 @@
                             <div class="contact__card">
                                 <i class="bx bxl-whatsapp contact__card-icon"></i>
                                 <h3 class="contact__card-title">Whatsapp</h3>
-                                <span class="contact__card-data">+34 602-3169-94</span>
+                                <span class="contact__card-data">602-316-994</span>
 
                                 <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="contact__button">
                                     Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -548,25 +555,25 @@
                     </div>
 
                     <div class="contact__content">
-                        <h3 class="contact__title">Write me your project</h3>
+                        <h3 class="contact__title">Comentame sobre tu proyecto</h3>
 
                         <form action="" class="contact__form">
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Names</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                                <label for="" class="contact__form-tag">Nombres</label>
+                                <input type="text" placeholder="Inserta tu nombre" class="contact__form-input">
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Insert your email" class="contact__form-input">
+                                <input type="email" placeholder="Inserta tu email" class="contact__form-input">
                             </div>
 
                             <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input" ></textarea>
+                                <label for="" class="contact__form-tag">Proyecto en mente</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu proyecto" class="contact__form-input" ></textarea>
                             </div>
     
-                            <button class="button">Send Message</button>
+                            <button class="button">Enviar mensaje</button>
                         </form>
                         
                     </div>
@@ -577,17 +584,17 @@
         <!--=============== FOOTER ===============-->
         <footer class="footer">
             <div class="footer__container container">
-                <h1 class="footer__title">Ansel</h1>
+                <h1 class="footer__title">   </h1>
 
                 <ul class="footer__list">
                     <li>
-                        <a href="#about" class="footer__link">About</a>
+                        <a href="#about" class="footer__link">Sobre mi</a>
                     </li>
                     <li>
-                        <a href="#work" class="footer__link">Project</a>
+                        <a href="#work" class="footer__link">Proyectos</a>
                     </li>
                     <li>
-                        <a href="#testimonial" class="footer__link">Testimonial</a>
+                        <a href="#testimonial" class="footer__link">Testimonios</a>
                     </li>
                 </ul>
 
