@@ -791,13 +791,11 @@ body.light-theme{
   display: inline-flex;
 }
 
-.testimonial__ejemplo{
-  width: 200px;
-  display: inline-grid;
+.testimonial__text{
+  padding: 0 1rem;
 }
-
 .testimonial__img{
-  width: 100px;
+  width: 180px;
   height: auto;
   border-radius: 1rem;
   margin-bottom: 0rem;
