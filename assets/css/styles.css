@@ -1157,3 +1157,5 @@ body.light-theme{
     border-radius: .5rem;
   }
 }
+
+::-webkit-scrollbar {display: none;}
