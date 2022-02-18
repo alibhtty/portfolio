@@ -776,17 +776,27 @@ body.light-theme{
 }
 
 /*=============== TESTIMONIAL ===============*/
+.testimonial__container{
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
 .testimonial__card{
   background-color: var(--container-color);
   padding: 1.25rem 1.5rem;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
+  display: inline-flex;
 }
 
 .testimonial__img{
-  width: 60px;
-  border-radius: 3rem;
-  margin-bottom: 1rem;
+  width: 120px;
+  border-radius: 1rem;
+  margin-bottom: 0rem;
+}
+
+.testimonial__text{
+  padding: 1.25rem 1.5rem; 
 }
 
 .testimonial__name{
