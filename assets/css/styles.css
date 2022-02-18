@@ -593,14 +593,15 @@ body.light-theme{
   .mains .containers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
+    grid-gap: .4rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .mains .containers {
+    width: 78%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }
 }

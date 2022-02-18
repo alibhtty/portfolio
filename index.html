@@ -22,8 +22,8 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <!-- <link rel="stylesheet" href="assets/css/flexbox.css"> -->
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+        <link rel="stylesheet" href="assets/css/fancybox.min.css">
+        <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'> -->
 
         <title>Inicio - Porfolio</title>
     </head>
@@ -84,7 +84,7 @@
                         <h3 class="home__education">Fotógrafa Profesional</h3>
 
                         <div class="home__buttons">
-                            <a href="#galery" class="button button--ghost">Ver Galeria</a>
+                            <a href="#galery" class="button button--ghost">Ver Galería</a>
                             <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">Ver Galeria</a> -->
                             <a href="#about" class="button">Sobre mi</a>
                         </div>
@@ -98,8 +98,8 @@
                         <a href="https://www.instagram.com/danielinnga//" target="_blank" class="home__social-link">
                             <i class='bx bxl-instagram'></i>
                         </a>
-                        <a href="https://alibhtty.github.io/soulmate/" target="_blank" class="home__social-link">
-                            <img style="width: 20px;" src="assets/icons/soulmate.svg" alt="soulmate barcelona">
+                        <a href="https://alibhtty.github.io/soulmate/" target="_blank" class="soulmate home__social-link">
+                            <img width="19px" src="assets/icons/soulmate.svg" alt="soulmate barcelona">
                             <!-- <i class='bx bxl-flickr'></i> -->
                         </a>
                         <a href="https://www.twitter.com/" target="_blank" class="home__social-link">
@@ -326,22 +326,8 @@
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="assets/img/galery03.gif" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="assets/img/galery03.gif" alt="Image Gallery">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-image">
                         <a href="assets/img/galery06.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
                           <img src="assets/img/galery06.jpg" alt="Image Gallery">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-image">
-                        <a href="assets/img/galery01.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="assets/img/galery01.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
@@ -357,7 +343,8 @@
             </section>
   
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+            <script src='assets/js/galery-jquery.js'></script>
+            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script> -->
             <script id="rendered-js" >
           // Fancybox Configuration
           $('[data-fancybox="gallery"]').fancybox({
@@ -514,19 +501,19 @@
 
                 <div class="work__container container grid">
                     <div class="work__card mix web">
-                        <img src="assets/img/work1.jpg" alt="" class="work__img">
+                        <img src="assets/img/galery01.jpg" alt="" class="work__img">
 
-                        <h3 class="work__title">Web Design</h3>
+                        <h3 class="work__title">Glamour day by Ariana</h3>
 
-                        <a href="#" class="work__button">
-                            Demo <i class="bx bx-right-arrow-alt work__icon" ></i>
+                        <a href="/sesion/glamour.html" class="work__button">
+                            Ver más <i class="bx bx-right-arrow-alt work__icon" ></i>
                         </a>
                     </div>
 
                     <div class="work__card mix movil">
-                        <img src="assets/img/work2.jpg" alt="" class="work__img">
+                        <img src="assets/img/galery03.jpg" alt="" class="work__img">
 
-                        <h3 class="work__title">App Movil</h3>
+                        <h3 class="work__title">Sun & Sky by Fer</h3>
 
                         <a href="#" class="work__button">
                             Demo <i class="bx bx-right-arrow-alt work__icon"></i>
