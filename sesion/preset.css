@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #111;
+}
+
+.container {
+  width: 80%;
+  margin: 8em auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: url(../assets/img/preset01.jpg) no-repeat;
+  background-size: cover;
+  width: 330px;
+  border-radius: 20px;
+  padding: 35px;
+  margin: 1.2em 0;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .title .name {
+    color: #eee;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.header .price {
+  margin: auto 0;
+  text-align: right;
+  font-weight: 400;
+}
+.header .price span {
+  font-weight: bold;
+}
+
+.img {
+  margin: 3em auto;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  height: 130px;
+}
+.img img {
+  width: 196px;
+  filter: drop-shadow(0 50px 27px rgba(0, 0, 0, 0.4));
+  transition: all 0.5s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+.amount h4 {
+  font-size: 1em;
+  padding: 8px 0;
+}
+.amount .count {
+  display: flex;
+  background: rgba(255, 254, 254, 0.4);
+  padding: 0 5px;
+  border-radius: 20px;
+}
+.amount .count button {
+  width: 30px;
+  background: white;
+  text-align: center;
+  height: 30px;
+  border-radius: 50%;
+  padding: 3px;
+  font-weight: bolder;
+  border: none;
+  margin: auto;
+  font-size: 1em;
+}
+.amount .count input {
+  margin: auto 10px;
+  font-weight: 700;
+  width: 30px;
+  text-align: center;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.foot-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.foot-card button {
+  width: 75%;
+  border-radius: 10px;
+  border: none;
+  padding: 1.2em 0;
+  background: white;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.foot-card button:hover {
+  background: tomato;
+  color: white;
+}
+.foot-card .save {
+  margin: auto 0;
+}

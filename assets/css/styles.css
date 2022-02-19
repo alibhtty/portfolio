@@ -793,10 +793,10 @@ body.light-theme{
 }
 
 .testimonial__text{
-  padding: 0 1rem;
+  padding: 0.5rem 0.5rem;
 }
 .testimonial__img{
-  width: 180px;
+  width: 280px;
   height: auto;
   border-radius: 1rem;
   margin-bottom: 0rem;
@@ -1157,10 +1157,10 @@ body.light-theme{
     margin-bottom: .5rem;
   }
   .testimonial__container{
-    width: 750px;
+    width: 550px;
   }
   .testimonial__card{
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.5rem;
   }
   .contact__container{
     column-gap: 6rem;
