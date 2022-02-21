@@ -607,10 +607,10 @@ body.light-theme{
 
 @media only screen and (min-width: 992px) {
   .mains .containers {
-    width: 78%;
+    width: 1000px; /* 78% */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 }
 
