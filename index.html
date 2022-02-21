@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/fancybox.min.css">
         <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'> -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <title>Inicio - DP Fotografía</title>
     </head>
 
@@ -677,20 +678,20 @@
                     <div class="contact__content">
                         <h3 class="contact__title">Comentame sobre tu proyecto</h3>
 
-                        <form action="" class="contact__form">
+                        <form action="https://formspree.io/f/mbjwoqkn" method="POST" id="form" class="contact__form">
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Nombres</label>
-                                <input type="text" placeholder="Inserta tu nombre" class="contact__form-input">
+                                <label for="name" class="contact__form-tag">Nombres</label>
+                                <input name="name" type="text" placeholder="Inserta tu nombre" class="contact__form-input">
                             </div>
 
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Inserta tu email" class="contact__form-input">
+                                <label for="email" class="contact__form-tag">Mail</label>
+                                <input name="email" type="email" placeholder="Inserta tu email" class="contact__form-input">
                             </div>
 
                             <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Proyecto en mente</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu proyecto" class="contact__form-input" ></textarea>
+                                <label for="message" class="contact__form-tag">Proyecto en mente</label>
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Escribe tu proyecto" class="contact__form-input" ></textarea>
                             </div>
     
                             <button class="button">Enviar mensaje</button>
@@ -748,6 +749,43 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+
+        <!--=============== FORM ===============-->
+        <script>
+            const $form = document.querySelector('#form')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            async function handleSubmit(event) {
+                event.preventDefault()
+                const form = new FormData(this)
+                const response = await fetch(this.action, {
+                    method: this.method,
+                    body: form,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                if (response.ok) {
+                    this.reset()
+                    swal({
+                        title: 'Gracias',
+                        text: 'Te escribiré pronto 😃!',
+                        icon: 'success',
+                        timer: 4000,
+                        /* button: "Aww yiss!", */
+                        showConfirmButton: 'true',
+	                    confirmButtonColor: '#7abff6',
+                        confirmButtonText: 'Adelante',
+	                    confirmButtonAriaLabel: 'Adelante',
+                        /* imageUrl: 'https://alibhtty.github.io/elchangarrito/assets/img/bg-init.png',
+                        imageWidth: 'auto',
+                        imageHeight: '100% + 5px',
+                        imageAlt: 'Logo', */
+                    });
+                }
+            }
+        </script>
         
         <!--=============== GALERY JS ===============-->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
