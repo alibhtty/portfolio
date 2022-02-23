@@ -25,13 +25,12 @@
         <link rel="stylesheet" href="../../assets/css/fancybox.min.css">
         <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'> -->
 
-        <title>Fernanda - Sesión DP</title>
+        <title>El Ramblero</title>
 
         <!-- SESION STYLE's -->
         <style>
           .card{height: 100%;}
           .card-image{height: 100%;}
-
           .mains .card-image img {
             position: inherit;
             width: 100%;
@@ -89,100 +88,158 @@
             </nav>
         </header>
 
-
         <!--=============== MAIN ===============-->
         <main class="main">
             <!--=============== HOME ===============-->
             <div hidden class="work__container"></div> <!-- activa light-mode -->
 
+            <!--=============== VIDEO ===============-->
+            <section class="container section" style="justify-content: center;">
+              <div class="video" style="width: 100%;height: 50vw; background-color: #eee;">
+                <div id="player"></div>
+              </div>
+              <script>
+                var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(tag);
+
+function onYouTubeIframeAPIReady() {
+  var player1 = new YT.Player("player", {
+    height: "100%",
+    width: "100%",
+    videoId: "usxzu_40giM", /* 7E2q5PRU5MQ */
+    origin: "https://s.codepen.io",
+    playerVars: {
+      controls: 1
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+        videoAutoControl(".video", e.target, 0.5);
+      }
+    }
+  });
+}
+
+/**
+ * 滑入滑出時自動控制影片播放
+ * @param selector 要定位的物件
+ * @param video 要被控制的影片
+ * @param videoTogglePct 影片出現多少才開始播
+ */
+function videoAutoControl(selector, video, videoTogglePct) {
+  // waypoint 偵測是以影片的上緣為準，以下簡稱影片
+  // 用 2 個位置的 waypoint 設定分別處理在螢幕上下緣的滑入滑出
+  // offset 是觸發動作的基準線位置，值對應 y 軸，正的往下，負的往上
+
+  // 計算參考位置
+  var videoHeightPct = $(selector).height() / $(window).height();
+  var offsetIn = (1 - videoTogglePct * videoHeightPct) * 100;
+  var offsetOut = -(videoTogglePct * videoHeightPct) * 100;
+
+  function inView(video) {
+    video.playVideo();
+  }
+
+  function outView(video) {
+    video.pauseVideo();
+  }
+
+  // 影片在畫面下方
+  $(selector).waypoint(
+    function(direction) {
+      if (direction == "down")
+        inView(video); // 可視範圍往下；影片從下往上進入可視範圍，播放
+      else outView(video); // 影片離開，暫停
+    },
+    {
+      offset: offsetIn + "%"
+    }
+  );
+
+  // 影片在畫面上方
+  $(selector).waypoint(
+    function(direction) {
+      if (direction == "up")
+        inView(video); // 可視範圍往上；影片從上往下進入可視範圍，播放
+      else outView(video); // 影片離開，暫停
+    },
+    {
+      offset: offsetOut + "%"
+    }
+  );
+}
+
+              </script>
+            </section>
+
             <!--=============== GALLERY ===============-->
             <section class="gallery section" id="galery">
-              <span class="section__subtitle">06 DIC 2021</span>
-              <h2 class="section__title">Fernanda Season</h2>
+              <span class="section__subtitle">RESTAURANTE</span>
+              <h2 class="section__title">El Ramblero</h2>
   
               <main class="mains">
                   <div class="containers">
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04585.jpg" data-fancybox="gallery" data-caption="Sesión Glamour by Ariana">
-                          <img src="../../assets/img/sesion/fernanda/DSC04585-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07274.jpg" data-fancybox="gallery" data-caption="Sesión Glamour by Ariana">
+                          <img src="../../assets/img/sesion/el-ramblero/01-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04517.jpg" data-fancybox="gallery" data-caption="Fotografía Restaurante El Ramblero">
-                          <img src="../../assets/img/sesion/fernanda/DSC04517-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07281.jpg" data-fancybox="gallery" data-caption="Fotografía Restaurante El Ramblero">
+                          <img src="../../assets/img/sesion/el-ramblero/02-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC045071.jpg" data-fancybox="gallery" data-caption="Sun & Sky by Fernanda">
-                          <img src="../../assets/img/sesion/fernanda/DSC045071-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07286.jpg" data-fancybox="gallery" data-caption="Sun & Sky by Fernanda">
+                          <img src="../../assets/img/sesion/el-ramblero/03-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04584.jpg" data-fancybox="gallery" data-caption="FORUM Barcelona">
-                          <img src="../../assets/img/sesion/fernanda/DSC04584-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07255.jpg" data-fancybox="gallery" data-caption="FORUM Barcelona">
+                          <img src="../../assets/img/sesion/el-ramblero/04-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04590.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04590-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07277.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                          <img src="../../assets/img/sesion/el-ramblero/05-min.jpg" alt="Image Gallery">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card"> <!-- 6 -->
+                      <div class="card-image">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07259.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                          <img src="../../assets/img/sesion/el-ramblero/06-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04493.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04493-min.jpg" alt="Image Gallery">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card" style="width: auto;">
-                      <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04495.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04495-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07277.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                          <img src="../../assets/img/sesion/el-ramblero/07-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04388.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04388-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07277.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                          <img src="../../assets/img/sesion/el-ramblero/08-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04440.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04440-min.jpg" alt="Image Gallery">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card" style="width: auto;">
-                      <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04393.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04393-min.jpg" alt="Image Gallery">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04492.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04492-min.jpg" alt="Image Gallery">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-image">
-                        <a href="../../assets/img/sesion/fernanda/DSC04396.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-                          <img src="../../assets/img/sesion/fernanda/DSC04396-min.jpg" alt="Image Gallery">
+                        <a href="../../assets/img/barcelona/bunkers/DSC07277.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                          <img src="../../assets/img/sesion/el-ramblero/09-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
                     </div>
@@ -193,51 +250,50 @@
             <!--=============== METADATA ===============-->
             <div class="metadata containers">
               <div class="meta-sub">
-                <h1 class="meta-title">Modelo: </h1>
-                <p class="meta-p">Fernanda</p>
+                <h1 class="meta-title">ubicación: </h1>
+                <p class="meta-p">El Ramblero</p>
               </div>
 
               <div class="meta-sub">
                 <h1 class="meta-title">Fecha: </h1>
-                <p class="meta-p">06 DIC 2021</p>
+                <p class="meta-p">14 DIC 2021</p>
               </div>
 
               <div class="meta-sub">
                 <h1 class="meta-title">Tags: </h1>
                 <ul class="meta-tag">
                   <li>
-                      <div class="meta-tag-list"><a href="../../index.html#galery" class="meta-tag-item">#sesión</a></div>
+                      <div class="meta-tag-list"><a href="../../index.html#work" class="meta-tag-item">#barcelona</a></div>
                   </li>
                   <li>
-                      <div class="meta-tag-list"><a href="../../index.html#galery" class="meta-tag-item">#sea</a></div>
+                      <div class="meta-tag-list"><a href="../../index.html#work" class="meta-tag-item">#cocina</a></div>
                   </li>
                   <li>
-                      <div class="meta-tag-list"><a href="../../index.html#galery" class="meta-tag-item">#doglove</a></div>
+                      <div class="meta-tag-list"><a href="../../index.html#work" class="meta-tag-item">#kitchen</a></div>
                   </li>
                   <li>
-                      <div class="meta-tag-list"><a href="../../index.html#galery" class="meta-tag-item">#sunset</a></div>
+                      <div class="meta-tag-list"><a href="../../index.html#work" class="meta-tag-item">#food</a></div>
                   </li>
                 </ul>
-                <!-- <p class="meta-p">#barcelona #urban <br> #paisaje</p> -->
               </div>
             </div>
-            
+
             <!--=============== PAGES ===============-->
             <div class="containers pages-container">
               <div class="prev" style="display: flex;">
-                <a href="../ariadna/" style="display: flex;">
+                <a href="../bunkers-del-carmel/" style="display: flex;">
                   <i class='bx bxs-chevron-left-circle page-icon'></i>
                   <h1>ANTERIOR</h1>
                 </a>
               </div>
   
               <div class="next">
-                <a href="../bunkers-del-carmel/">
+                <a href="../fernanda/">
                   <i class='bx bxs-chevron-right-circle page-icon' style="float: right;"></i>
                   <H1 style="float: right;">SIGUIENTE</H1>
                 </a>
               </div>
-            </div>
+          </div>
   
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
             <script src='../../assets/js/galery-jquery.js'></script>
@@ -259,19 +315,33 @@
             </script>
         </main>
 
+
         <!--=============== FOOTER ===============-->
         <footer class="footer">
             <div class="footer__container container">
+                <!-- <h1 class="footer__title"> title  </h1>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="../../index.html#about" class="footer__link">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#work" class="footer__link">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#testimonial" class="footer__link">Testimonios</a>
+                    </li>
+                </ul> -->
 
                 <ul class="footer__social">
                     <a href="" target="_blank" class="footer__social-link">
-                         <i class="bx bxl-facebook"></i>
+                      <img width="19px" src="../../assets/icons/soulmate.svg" alt="soulmate barcelona">
                     </a>
-                    <a href="" target="_blank" class="footer__social-link">
+                    <a href="https://www.instagram.com/danielinnga/" target="_blank" class="footer__social-link">
                          <i class="bx bxl-instagram"></i>
                     </a>
                     <a href="https://www.facebook.com/daniela.peralvo.31" target="_blank" class="footer__social-link">
-                         <i class="bx bxl-twitter"></i>
+                         <i class="bx bxl-facebook"></i>
                     </a>
                 </ul>
 
