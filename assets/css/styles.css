@@ -640,8 +640,14 @@ body.light-theme{
 }
 
 .services__button{
+  justify-content: center;
+  margin-top: 1rem;
+  padding: .4rem .2rem .4rem .8rem;
+  background-color: var(--body-color);
+  border-radius: 25px;
   color: var(--first-color);
-  font-size: var(--small-font-size);
+/*   font-size: var(--small-font-size); */
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   column-gap: .25rem;
@@ -811,7 +817,7 @@ body.light-theme{
 }
 
 .testimonial__text{
-  padding: 0.5rem 1.5rem;
+  padding: 0 0.5rem 0rem 2rem;
 }
 .testimonial__img{
   margin: 0 .7rem;
@@ -825,11 +831,12 @@ body.light-theme{
 
 .testimonial__name{
   font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  font-weight: 500;
   margin-bottom: .25rem;
 }
 
 .testimonial__description{
+  padding: .5rem;
   font-size: var(--small-font-size);
 }
 
@@ -878,11 +885,13 @@ body.light-theme{
 
 .contact__card-data{
   display: block;
+  color: var(--title-color);
   margin-bottom: .75rem;
 }
 
 .contact__button{
   color: var(--first-color);
+  text-transform: uppercase;
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
@@ -895,7 +904,7 @@ body.light-theme{
 }
 
 .contact__button-icon{
-  font-size: 1rem;
+  font-size: 1.4rem;
   transition: .4s;
 }
 
