@@ -94,8 +94,70 @@
             <div hidden class="work__container"></div> <!-- activa light-mode -->
 
             <!--=============== VIDEO ===============-->
-            <section class="container section" style="justify-content: center;">
-              <div class="video" style="width: 100%;height: 50vw; background-color: #eee;">
+            <!-- <section class="container section" style="justify-content: center;">
+              
+            </section> -->
+
+            <!--=============== GALLERY ===============-->
+            <section class="gallery section" id="galery">
+              <span class="section__subtitle">RESTAURANTE</span>
+              <h2 class="section__title">El Ramblero</h2>
+
+              <div class="banner banner--youtube">
+                <div class="banner__ratio">
+                    <div id="player" class="banner__media"></div>
+                </div>
+              </div>
+
+              <!-- <div class="banner banner--youtube">
+                <div class="banner__ratio">
+                    <div id="player" class="banner__media"></div>
+                </div>
+              </div>
+              <script>
+                  var tag = document.createElement('script');
+                  
+                  tag.src = "https://www.youtube.com/iframe_api";
+                  var firstScriptTag = document.getElementsByTagName('script')[0];
+                  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                  var player;
+                  
+                  function onYouTubeIframeAPIReady() {
+                      player = new YT.Player('player', {
+                          height: '100%',
+                          width: '100%',
+                          playerVars: {
+                              autoplay: 1,
+                              loop: 1,
+                              rel: 0,
+                              egm: 0,
+                              showsearch: 0,
+                              controls: 0,
+                              modestbranding: 1,
+                              showinfo: 0
+                          },
+                          videoId: 'usxzu_40giM', /* - usxzu_40giM FUijhU67BRY*/
+                          events: {
+                              'onReady': onPlayerReady,
+                              'onStateChange': onPlayerStateChange
+                          }
+                      });
+                  }
+                  
+                  function onPlayerReady(event) {
+                  	event.target.setPlaybackQuality('medium');
+                      event.target.playVideo();
+                      //player.mute();
+                  }
+                  var done = false;
+                  function onPlayerStateChange(event) {}
+                  
+                  function stopVideo() {
+                      player.stopVideo();
+                  }
+              </script> -->
+
+              <!-- <div class="video">
                 <div id="player"></div>
               </div>
               <script>
@@ -170,13 +232,7 @@ function videoAutoControl(selector, video, videoTogglePct) {
   );
 }
 
-              </script>
-            </section>
-
-            <!--=============== GALLERY ===============-->
-            <section class="gallery section" id="galery">
-              <span class="section__subtitle">RESTAURANTE</span>
-              <h2 class="section__title">El Ramblero</h2>
+              </script> -->
   
               <main class="mains">
                   <div class="containers">
@@ -315,7 +371,6 @@ function videoAutoControl(selector, video, videoTogglePct) {
             </script>
         </main>
 
-
         <!--=============== FOOTER ===============-->
         <footer class="footer">
             <div class="footer__container container">
@@ -362,6 +417,49 @@ function videoAutoControl(selector, video, videoTogglePct) {
 
         <!--=============== MAIN JS ===============-->
         <script src="../../assets/js/main.js"></script>
+
+        <script>
+          var tag = document.createElement('script');
+          
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          var player;
+          
+          function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                  height: '100%',
+                  width: '100%',
+                  playerVars: {
+                      autoplay: 1,
+                      loop: 1,
+                      rel: 0,
+                      egm: 0,
+                      showsearch: 0,
+                      controls: 0,
+                      modestbranding: 1,
+                      showinfo: 0
+                  },
+                  videoId: 'usxzu_40giM',
+                  events: {
+                      'onReady': onPlayerReady,
+                      'onStateChange': onPlayerStateChange
+                  }
+              });
+          }
+          
+          function onPlayerReady(event) {
+            event.target.setPlaybackQuality('medium');
+              event.target.playVideo();
+              //player.mute();
+          }
+          var done = false;
+          function onPlayerStateChange(event) {}
+          
+          function stopVideo() {
+              player.stopVideo();
+          }
+        </script>
         
     </body>
 </html>
