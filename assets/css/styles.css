@@ -1241,6 +1241,10 @@ body.light-theme{
   .metadata{
     padding: 0 2rem;
   }
+  .card:hover{
+    filter: brightness(120%)contrast(120%);
+    transition: 1.8s;
+  }
 }
 
 /*=============== PAGES GALERY ===============*/
@@ -1270,11 +1274,6 @@ body.light-theme{
     margin-top: -4px;
     font-size: 18px;
   }
-}
-
-.card:hover{
-  filter: brightness(120%)contrast(120%);
-  transition: 1.8s;
 }
 
 
