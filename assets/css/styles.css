@@ -167,6 +167,9 @@ body.light-theme{
 .light-theme .active-work,
 .light-theme .meta-tag-item,
 .light-theme .meta-p,
+.light-theme .w-item,
+.light-theme .w-title,
+.light-theme .w-price,
 .light-theme .footer__title,
 .light-theme .footer__link,
 .light-theme .footer__copy,
@@ -980,7 +983,7 @@ body.light-theme{
   color: var(--first-color);
 }
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
   background-color: hsl(var(--second-hue), 8%, 38%);
@@ -993,7 +996,7 @@ body.light-theme{
 
 ::-webkit-scrollbar-thumb:hover{
   background-color: hsl(var(--second-hue), 8%, 20%);
-}
+} */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -1145,7 +1148,7 @@ body.light-theme{
     padding: 1rem 1.25rem;
   }
   .about__description{
-    padding: 0 4rem 0 0;
+    padding: 0 0rem 0 0;
     margin-bottom: 1.5rem;
   }
   .skills__container{
@@ -1187,7 +1190,7 @@ body.light-theme{
   }
 }
 
-/* METADATOS GALERY */
+/*=============== METADATOS GALERY  ===============*/
 .metadata{
   padding: 0 1rem;
   padding-bottom: 2rem;
@@ -1226,13 +1229,12 @@ body.light-theme{
   }
 }
 
+/*=============== PAGES GALERY ===============*/
 .pages-container {
   margin-top: 2rem;
   max-width: 63rem;
   color: var(--first-color);
-  font-size: var(--small-font-size);
   display: flex;
-  /* align-items: center; */
 }
 .page-icon{
   font-size: 30px;
@@ -1242,8 +1244,23 @@ body.light-theme{
   width: 50%;
 }
 .prev h1, .next h1 {
-  padding: 0 .5rem;
+  padding: 0 .2rem;
   font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .page-icon{
+    font-size: 20px;
+  }
+  .prev h1, .next h1 {
+    margin-top: -4px;
+    font-size: 18px;
+  }
+}
+
+.card:hover{
+  filter: brightness(120%)contrast(120%);
+  transition: 1.8s;
 }
 
 
