@@ -52,7 +52,7 @@
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="../../index.html#home" class="nav__link active-link">
+                            <a href="../../index.html#home" class="nav__link"> <!-- active-link -->
                                 <i class='bx bx-home-alt'></i>
                             </a>
                         </li>
@@ -91,6 +91,7 @@
         <!--=============== MAIN ===============-->
         <main class="main">
             <!--=============== HOME ===============-->
+            <div hidden class="work__container"></div> <!-- activa light-mode -->
 
             <!--=============== GALLERY ===============-->
             <section class="gallery section" id="galery">
@@ -197,8 +198,8 @@
             <!--=============== METADATA ===============-->
             <div class="metadata containers">
               <div class="meta-sub">
-                <h1 class="meta-title">Categoría: </h1>
-                <p class="meta-p">Barcelona Tour</p>
+                <h1 class="meta-title">unicación: </h1>
+                <p class="meta-p">Los Bunker's del Carmel</p>
               </div>
 
               <div class="meta-sub">
@@ -222,9 +223,25 @@
                       <div class="meta-tag-list"><a href="../../index.html#work" class="meta-tag-item">walls</a></div>
                   </li>
                 </ul>
-                <!-- <p class="meta-p">#barcelona #urban <br> #paisaje</p> -->
               </div>
             </div>
+
+            <!--=============== PAGES ===============-->
+            <div class="containers pages-container">
+              <div class="prev" style="display: flex;">
+                <a href="../ariadna/" style="display: flex;">
+                  <i class='bx bxs-chevron-left-circle page-icon'></i>
+                  <h1>ANTERIOR</h1>
+                </a>
+              </div>
+  
+              <div class="next">
+                <a href="../ariadna/index.html">
+                  <i class='bx bxs-chevron-right-circle page-icon' style="float: right;"></i>
+                  <H1 style="float: right;">SIGUIENTE</H1>
+                </a>
+              </div>
+          </div>
   
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
             <script src='../../assets/js/galery-jquery.js'></script>
@@ -245,6 +262,7 @@
           //# sourceURL=pen.js
             </script>
         </main>
+
 
         <!--=============== FOOTER ===============-->
         <footer class="footer">

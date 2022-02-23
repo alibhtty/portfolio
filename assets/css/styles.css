@@ -165,6 +165,8 @@ body.light-theme{
 .light-theme .button,
 .light-theme .button:hover,
 .light-theme .active-work,
+.light-theme .meta-tag-item,
+.light-theme .meta-p,
 .light-theme .footer__title,
 .light-theme .footer__link,
 .light-theme .footer__copy,
@@ -1224,8 +1226,30 @@ body.light-theme{
   }
 }
 
+.pages-container {
+  margin-top: 2rem;
+  max-width: 63rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  /* align-items: center; */
+}
+.page-icon{
+  font-size: 30px;
+  color: var(--first-color);
+}
+.prev, .next{
+  width: 50%;
+}
+.prev h1, .next h1 {
+  padding: 0 .5rem;
+  font-size: 20px;
+}
+
 
 /* @alibhtty - Settings */
+.home__img, .about__img, .work__img {pointer-events: none;}
+
 ::-webkit-scrollbar {display: none;}
 a { -webkit-tap-highlight-color: rgba(0,0,0,0);}
 textarea, select, input, button { 
