@@ -400,7 +400,7 @@ body.light-theme{
   right: -1.5rem;
   bottom: 4rem;
   display: grid;
-  row-gap: 2.25rem;
+  row-gap: 1.5rem; /* 2.25rem */
   justify-items: center;
 }
 
@@ -937,7 +937,7 @@ body.light-theme{
 
 .footer__title,
 .footer__link{
-  color: var(--body-color);
+  color: var(--first-color); /* --body-color */
 }
 
 .footer__title{
@@ -1185,4 +1185,49 @@ body.light-theme{
   }
 }
 
+.metadata{
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  max-width: 65rem;
+}
+.meta__title{
+  color: var(--first-color);
+  margin: 0;
+}
+.meta__p{
+  color: #ccc;
+}
+
+/* @alibhtty - Settings */
 ::-webkit-scrollbar {display: none;}
+a { -webkit-tap-highlight-color: rgba(0,0,0,0);}
+textarea, select, input, button { 
+  outline: none;
+}
+:focus { 
+  outline-color: transparent; 
+  outline-style: none;
+}
+
+h2, span{cursor:default;}
+
+body, img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  } /* .noselect  -- aplicar clase */
+
+/* NO SELECCIONABLE */
+h2, h3, p {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+}
