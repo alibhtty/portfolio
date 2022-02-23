@@ -200,3 +200,6 @@ body {
 .w-container .w-card:hover .w-button {
   opacity: 1;
 }
+.img-icon{
+  font-size: 14px;
+}

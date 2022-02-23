@@ -653,7 +653,7 @@ body.light-theme{
 }
 
 .services__icon{
-  font-size: 1rem;
+  font-size: 1.4rem;
   transition: .4s;
 }
 
@@ -755,6 +755,10 @@ body.light-theme{
   padding: 1rem;
   border-radius: .6rem;
 }
+.work__card:hover img{
+  filter: brightness(120%)contrast(110%);
+  transition: 1200ms;
+}
 
 .work__img{
   border-radius: .4rem;
@@ -769,6 +773,7 @@ body.light-theme{
 
 .work__button{
   width: max-content;
+  text-transform: uppercase;
   color: var(--first-color);
   font-size: var(--small-font-size);
   display: flex;
@@ -777,11 +782,11 @@ body.light-theme{
 }
 
 .work__button:hover .work__icon{
-  transform: translateX(.25rem);
+  transform: translateX(.35rem);
 }
 
 .work__icon{
-  font-size: 1rem;
+  font-size: 1.4rem;
   transition: .4s;
 }
 
@@ -800,7 +805,7 @@ body.light-theme{
 .testimonial__card{
   background-color: var(--container-color);
   padding: 1.25rem .5rem;
-  border-radius: 1.5rem;
+  border-radius: .75rem;
   margin-bottom: 3rem;
   display: inline-flex;
 }
@@ -814,7 +819,7 @@ body.light-theme{
   width: 250px;
   object-fit: contain;
   height: auto;
-  border-radius: 1rem;
+  border-radius: .5rem;
   margin-bottom: 0rem;
 }
 
