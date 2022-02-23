@@ -1185,6 +1185,7 @@ body.light-theme{
   }
 }
 
+/* METADATOS GALERY */
 .metadata{
   padding: 0 1rem;
   padding-bottom: 2rem;
@@ -1194,13 +1195,27 @@ body.light-theme{
   padding-bottom: 1rem;
   max-width: 65rem;
 }
-.meta__title{
-  font-size: 18px;
+.meta-title{
+  text-transform: uppercase;
+  font-size: 16px;
   color: var(--first-color);
-  margin: 0;
+  margin-bottom: -4px;
 }
-.meta__p{
+.meta-p{
   font-size: 14px;
+  color: #ccc;
+}
+.meta-tag{
+  margin-top: .2rem;
+  display: flex;
+  column-gap: .5rem;
+}
+.meta-tag-list{
+  padding: .2rem .6rem;
+  border-radius: 25px;
+  background-color: var(--container-color);
+}
+.meta-tag-item{
   color: #ccc;
 }
 @media screen and (min-width: 992px){
@@ -1208,6 +1223,7 @@ body.light-theme{
     padding: 0 2rem;
   }
 }
+
 
 /* @alibhtty - Settings */
 ::-webkit-scrollbar {display: none;}
