@@ -969,7 +969,7 @@ body.light-theme{
 
 .footer__copy{
   display: block;
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   color: var(--first-color); /* --container-color */
   text-align: center;
   font-size: var(--smaller-font-size);
@@ -1186,16 +1186,27 @@ body.light-theme{
 }
 
 .metadata{
-  padding: 0 2rem;
+  padding: 0 1rem;
   padding-bottom: 2rem;
   max-width: 65rem;
 }
+.meta-sub{
+  padding-bottom: 1rem;
+  max-width: 65rem;
+}
 .meta__title{
+  font-size: 18px;
   color: var(--first-color);
   margin: 0;
 }
 .meta__p{
+  font-size: 14px;
   color: #ccc;
+}
+@media screen and (min-width: 992px){
+  .metadata{
+    padding: 0 2rem;
+  }
 }
 
 /* @alibhtty - Settings */
