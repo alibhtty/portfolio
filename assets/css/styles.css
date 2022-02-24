@@ -1368,12 +1368,17 @@ h2, h3, p {
 
 .banner--youtube .banner__media {
   position: absolute;
-  top: -24%; /* 12% */
+  top: -22%; /* 12% */
   left: 0;
   width: 100%;
-  height: 159%; /* 129 */
+  height: 149%; /* 129 */
 }
 
+@media screen and (max-width: 576px) {
+  .banner--youtube .banner__ratio {
+    padding-bottom: 40%;
+  }
+}
 /* @media (max-width:960px) {
   .banner--youtube .banner__media {
       position: absolute;
