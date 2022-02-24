@@ -1373,10 +1373,10 @@ h2, h3, p {
 
 .banner--youtube .banner__media {
   position: absolute;
-  top: -17%; /* 12% */
+  top: -19%; /* 12% */
   left: 0;
   width: 100%;
-  height: 130%;
+  height: 133%;
 }
 
 @media screen and (max-width: 576px) {
