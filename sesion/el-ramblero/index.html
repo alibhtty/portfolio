@@ -97,140 +97,16 @@
             <section class="gallery section" id="galery">
               <span class="section__subtitle">RESTAURANTE</span>
               <h2 class="section__title">El Ramblero</h2>
-
-              <!--=============== VIDEO ===============-->
-              <div class="banner banner--youtube">
-                <div class="banner__ratio">
-                    <div id="player" class="banner__media"></div>
-                </div>
-              </div>
-
-              <!-- <div class="banner banner--youtube">
-                <div class="banner__ratio">
-                    <div id="player" class="banner__media"></div>
-                </div>
-              </div>
-              <script>
-                  var tag = document.createElement('script');
-                  
-                  tag.src = "https://www.youtube.com/iframe_api";
-                  var firstScriptTag = document.getElementsByTagName('script')[0];
-                  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                  var player;
-                  
-                  function onYouTubeIframeAPIReady() {
-                      player = new YT.Player('player', {
-                          height: '100%',
-                          width: '100%',
-                          playerVars: {
-                              autoplay: 1,
-                              loop: 1,
-                              rel: 0,
-                              egm: 0,
-                              showsearch: 0,
-                              controls: 0,
-                              modestbranding: 1,
-                              showinfo: 0
-                          },
-                          videoId: 'usxzu_40giM', /* - usxzu_40giM FUijhU67BRY*/
-                          events: {
-                              'onReady': onPlayerReady,
-                              'onStateChange': onPlayerStateChange
-                          }
-                      });
-                  }
-                  
-                  function onPlayerReady(event) {
-                  	event.target.setPlaybackQuality('medium');
-                      event.target.playVideo();
-                      //player.mute();
-                  }
-                  var done = false;
-                  function onPlayerStateChange(event) {}
-                  
-                  function stopVideo() {
-                      player.stopVideo();
-                  }
-              </script> -->
-
-              <!-- <div class="video">
-                <div id="player"></div>
-              </div>
-              <script>
-                var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-document.head.appendChild(tag);
-
-function onYouTubeIframeAPIReady() {
-  var player1 = new YT.Player("player", {
-    height: "100%",
-    width: "100%",
-    videoId: "usxzu_40giM", /* 7E2q5PRU5MQ */
-    origin: "https://s.codepen.io",
-    playerVars: {
-      controls: 1
-    },
-    events: {
-      onReady: function(e) {
-        e.target.mute();
-        videoAutoControl(".video", e.target, 0.5);
-      }
-    }
-  });
-}
-
-/**
- * 滑入滑出時自動控制影片播放
- * @param selector 要定位的物件
- * @param video 要被控制的影片
- * @param videoTogglePct 影片出現多少才開始播
- */
-function videoAutoControl(selector, video, videoTogglePct) {
-  // waypoint 偵測是以影片的上緣為準，以下簡稱影片
-  // 用 2 個位置的 waypoint 設定分別處理在螢幕上下緣的滑入滑出
-  // offset 是觸發動作的基準線位置，值對應 y 軸，正的往下，負的往上
-
-  // 計算參考位置
-  var videoHeightPct = $(selector).height() / $(window).height();
-  var offsetIn = (1 - videoTogglePct * videoHeightPct) * 100;
-  var offsetOut = -(videoTogglePct * videoHeightPct) * 100;
-
-  function inView(video) {
-    video.playVideo();
-  }
-
-  function outView(video) {
-    video.pauseVideo();
-  }
-
-  // 影片在畫面下方
-  $(selector).waypoint(
-    function(direction) {
-      if (direction == "down")
-        inView(video); // 可視範圍往下；影片從下往上進入可視範圍，播放
-      else outView(video); // 影片離開，暫停
-    },
-    {
-      offset: offsetIn + "%"
-    }
-  );
-
-  // 影片在畫面上方
-  $(selector).waypoint(
-    function(direction) {
-      if (direction == "up")
-        inView(video); // 可視範圍往上；影片從上往下進入可視範圍，播放
-      else outView(video); // 影片離開，暫停
-    },
-    {
-      offset: offsetOut + "%"
-    }
-  );
-}
-
-              </script> -->
-  
+              
               <main class="mains">
+
+                <!--=============== VIDEO ===============-->
+                <div class="banner banner--youtube containers">
+                  <div class="banner__ratio">
+                      <div id="player" class="banner__media"></div>
+                  </div>
+                </div>
+
                   <div class="containers">
                     <div class="card">
                       <div class="card-image">
@@ -436,7 +312,7 @@ function videoAutoControl(selector, video, videoTogglePct) {
                       modestbranding: 1,
                       showinfo: 0
                   },
-                  videoId: 'usxzu_40giM',
+                  videoId: 'FUijhU67BRY',
                   events: {
                       'onReady': onPlayerReady,
                       'onStateChange': onPlayerStateChange
