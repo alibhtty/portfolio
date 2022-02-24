@@ -1277,6 +1277,32 @@ body.light-theme{
 }
 
 
+/* FLOAT Fx*/
+@media screen and (min-width: 992px){
+  .contact__card:hover{
+    transform: translateY(.20rem);
+    transition: all .4s linear;
+  }
+  .services__button:hover{
+    transform: translateY(.20rem);
+    transition: all .4s linear;
+  }
+  .work__card:hover{
+    transform: translateY(.20rem);
+    transition: all .4s linear;
+  }
+  .work__item:hover{
+    transform: translateY(.20rem);
+    transition: all .4s linear;
+  }
+  .card:hover{
+    transform: translateY(.20rem);
+    transition: all .4s linear;
+  }
+}
+
+
+
 /* @alibhtty - Settings */
 .home__img, .about__img, .work__img {pointer-events: none;}
 
@@ -1348,11 +1374,12 @@ h2, h3, p {
 } */
 
 .banner--youtube .banner__ratio {
-  margin-left: 3%;
+  margin-left: 3.3%;
+  border-radius: 4px;
   margin-bottom: 0rem;
   position: relative;
   display: block;
-  width: 61rem;
+  width: 60.6rem;
   height: 0;
   padding-bottom: 45%; /* 44 */
   overflow: hidden;
@@ -1368,7 +1395,7 @@ h2, h3, p {
 
 .banner--youtube .banner__media {
   position: absolute;
-  top: -14%; /* 12% */
+  top: 0%; /* 12% */
   left: 0;
   width: 100%;
   height: 100%; /* 129 */
@@ -1377,6 +1404,14 @@ h2, h3, p {
 @media screen and (max-width: 576px) {
   .banner--youtube .banner__ratio {
     padding-bottom: 30%;
+    margin-bottom: -1rem;
+  }
+  .banner--youtube .banner__media {
+    position: absolute;
+    top: -10%; /* 12% */
+    left: -2%;
+    width: 100%;
+    height: 120%; /* 129 */
   }
 }
 /* @media (max-width:960px) {
@@ -1413,15 +1448,6 @@ h2, h3, p {
     } */
 
 
-
-
-
-
-    /* @media screen and (min-width: 992px){
-      .banner--youtube{
-      }
-    } */
-
     /* @media screen and (max-width: 576px){
       .banner--youtube .banner__ratio {
         margin-left: 0;
@@ -1431,23 +1457,4 @@ h2, h3, p {
       }
     } */
 
-    .contact__card:hover{
-      transform: translateY(.20rem);
-      transition: all .4s linear;
-    }
-    .services__button:hover{
-      transform: translateY(.20rem);
-      transition: all .4s linear;
-    }
-    .work__card:hover{
-      transform: translateY(.20rem);
-      transition: all .4s linear;
-    }
-    .work__item:hover{
-      transform: translateY(.20rem);
-      transition: all .4s linear;
-    }
-    .card:hover{
-      transform: translateY(.20rem);
-      transition: all .4s linear;
-    }
+    
