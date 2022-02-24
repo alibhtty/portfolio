@@ -1371,7 +1371,7 @@ h2, h3, p {
   top: -14%; /* 12% */
   left: 0;
   width: 100%;
-  height: 139%; /* 129 */
+  height: 100%; /* 129 */
 }
 
 @media screen and (max-width: 576px) {
