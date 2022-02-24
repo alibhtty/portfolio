@@ -1354,7 +1354,7 @@ h2, h3, p {
   display: block;
   width: 61rem;
   height: 0;
-  padding-bottom: 25%; /* 44 */
+  padding-bottom: 45%; /* 44 */
   overflow: hidden;
   background-color: #434342
 }
@@ -1368,10 +1368,10 @@ h2, h3, p {
 
 .banner--youtube .banner__media {
   position: absolute;
-  top: -12%;
+  top: -24%; /* 12% */
   left: 0;
-  width: 1000px;
-  height: 129%
+  width: 100%;
+  height: 159%; /* 129 */
 }
 
 /* @media (max-width:960px) {
@@ -1412,11 +1412,10 @@ h2, h3, p {
 
 
 
-    @media screen and (min-width: 992px){
+    /* @media screen and (min-width: 992px){
       .banner--youtube{
-        /* width: 1000px; */
       }
-    }
+    } */
 
     /* @media screen and (max-width: 576px){
       .banner--youtube .banner__ratio {
