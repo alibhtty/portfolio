@@ -282,6 +282,9 @@ body.light-theme{
   justify-content: space-between;
   align-items: center;
 }
+.nav__item{
+  transition: all .4s ease-in;
+}
 
 .nav__link{
   color: var(--text-color);
@@ -426,7 +429,7 @@ body.light-theme{
   padding: .75rem 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
-  transition: .4s;
+  transition: all .4s ease-in;
 }
 
 .button:hover{
@@ -573,6 +576,7 @@ body.light-theme{
   border-radius: 4px;
   /* background: #ffffff; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  transition: all .8s ease-in;
 }
 .mains .card-image {
   position: relative;
@@ -652,6 +656,7 @@ body.light-theme{
   align-items: center;
   column-gap: .25rem;
   cursor: pointer;
+  transition: all .8s ease-in;
 }
 
 .services__button:hover .services__icon{
@@ -754,12 +759,15 @@ body.light-theme{
   padding: .25rem .75rem;
   font-weight: var(--font-medium);
   border-radius: .5rem;
+  transition: all .8s ease-in;
 }
 
 .work__card{
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: .6rem;
+  cursor: pointer;
+  transition: all .8s ease-in;
 }
 .work__card:hover img{
   filter: brightness(120%)contrast(110%);
@@ -870,6 +878,7 @@ body.light-theme{
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
+  transition: all .8s ease-in;
 }
 
 .contact__card-icon{
@@ -1279,25 +1288,33 @@ body.light-theme{
 
 /* FLOAT Fx*/
 @media screen and (min-width: 992px){
+  .button:hover{
+    transform: translateY(.10rem);
+    transition: all .8s ease-out;
+  }
+  .nav__item:hover{
+    transform: translateY(.10rem);
+    transition: all .8s ease-out;
+  }
   .contact__card:hover{
     transform: translateY(.20rem);
-    transition: all .4s linear;
+    transition: all .6s ease-out;
   }
   .services__button:hover{
     transform: translateY(.20rem);
-    transition: all .4s linear;
+    transition: all .6s ease-out;
   }
   .work__card:hover{
     transform: translateY(.20rem);
-    transition: all .4s linear;
+    transition: all .6s ease-out;
   }
   .work__item:hover{
     transform: translateY(.20rem);
-    transition: all .4s linear;
+    transition: all .6s ease-out;
   }
   .card:hover{
     transform: translateY(.20rem);
-    transition: all .4s linear;
+    transition: all .6s ease-out;
   }
 }
 
