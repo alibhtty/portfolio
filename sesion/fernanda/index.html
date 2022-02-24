@@ -99,7 +99,14 @@
             <section class="gallery section" id="galery">
               <span class="section__subtitle">06 DIC 2021</span>
               <h2 class="section__title">Fernanda Season</h2>
-  
+
+              <!--=============== VIDEO ===============-->
+              <div class="banner banner--youtube">
+                <div class="banner__ratio">
+                    <div id="player" class="banner__media"></div>
+                </div>
+              </div>
+
               <main class="mains">
                   <div class="containers">
                     <div class="card">
@@ -292,6 +299,49 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="../../assets/js/main.js"></script>
+
+        <script>
+          var tag = document.createElement('script');
+          
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          var player;
+          
+          function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                  height: '100%',
+                  width: '100%',
+                  playerVars: {
+                      autoplay: 1,
+                      loop: 1,
+                      rel: 0,
+                      egm: 0,
+                      showsearch: 0,
+                      controls: 0,
+                      modestbranding: 1,
+                      showinfo: 0
+                  },
+                  videoId: 'kw68zASIq80',
+                  events: {
+                      'onReady': onPlayerReady,
+                      'onStateChange': onPlayerStateChange
+                  }
+              });
+          }
+          
+          function onPlayerReady(event) {
+            event.target.setPlaybackQuality('medium');
+              event.target.playVideo();
+              //player.mute();
+          }
+          var done = false;
+          function onPlayerStateChange(event) {}
+          
+          function stopVideo() {
+              player.stopVideo();
+          }
+        </script>
         
     </body>
 </html>
