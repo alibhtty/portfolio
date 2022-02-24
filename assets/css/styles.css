@@ -1358,21 +1358,6 @@ h2, h3, p {
 
 
 
-
-/* .banner--youtube {
-  width: 100%;
-  position: relative;
-  display: block;
-  margin-left: -50%;
-} */
-
-/* @media(min-width: 960px) {
-  .banner--youtube {
-      width: 105%;
-      margin-left: -25%;
-  }
-} */
-
 .banner--youtube .banner__ratio {
   margin-left: 3.3%;
   border-radius: 4px;
@@ -1386,19 +1371,12 @@ h2, h3, p {
   background-color: #434342
 }
 
-/* @media (max-width:960px) {
-  .banner--youtube .banner__ratio {
-      padding-top: 40px;
-      margin-top: 0px;
-  }
-} */
-
 .banner--youtube .banner__media {
   position: absolute;
   top: 0%; /* 12% */
   left: 0;
   width: 100%;
-  height: 100%; /* 129 */
+  height: 100%;
 }
 
 @media screen and (max-width: 576px) {
@@ -1408,53 +1386,10 @@ h2, h3, p {
   }
   .banner--youtube .banner__media {
     position: absolute;
-    top: -10%; /* 12% */
+    top: -14%; /* 12% */
     left: -2.5%;
     width: 100%;
-    height: 120%; /* 129 */
+    height: 130%;
   }
 }
-/* @media (max-width:960px) {
-  .banner--youtube .banner__media {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: -25%;
-      width: 100%;
-      height: 150%;
-  }
-} */
-/* @media (max-width:576px) {
-  .banner--youtube .banner__ratio {
-      width: 100%;
-      padding-top: 40px;
-      margin-top: 0px;
-      padding-bottom: 46%;
-  }
-}
-
-@media (max-width:960px) {
-  .banner--youtube {
-    width: 100vw;
-    margin-left: -26vh;
-  }
-
-  @media (min-width:960px) {
-    .banner--ratio {
-      width: 150vw;
-      margin-left: -56vh;
-    } */
-
-
-    /* @media screen and (max-width: 576px){
-      .banner--youtube .banner__ratio {
-        margin-left: 0;
-        width: 100%;
-        padding-bottom: 60%;
-        grid-template-columns: repeat(1, 1fr);
-      }
-    } */
-
     
