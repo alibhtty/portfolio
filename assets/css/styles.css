@@ -1376,7 +1376,7 @@ h2, h3, p {
 
 @media screen and (max-width: 576px) {
   .banner--youtube .banner__ratio {
-    padding-bottom: 40%;
+    padding-bottom: 30%;
   }
 }
 /* @media (max-width:960px) {
@@ -1430,3 +1430,24 @@ h2, h3, p {
         grid-template-columns: repeat(1, 1fr);
       }
     } */
+
+    .contact__card:hover{
+      transform: translateY(.20rem);
+      transition: all .4s linear;
+    }
+    .services__button:hover{
+      transform: translateY(.20rem);
+      transition: all .4s linear;
+    }
+    .work__card:hover{
+      transform: translateY(.20rem);
+      transition: all .4s linear;
+    }
+    .work__item:hover{
+      transform: translateY(.20rem);
+      transition: all .4s linear;
+    }
+    .card:hover{
+      transform: translateY(.20rem);
+      transition: all .4s linear;
+    }
