@@ -582,9 +582,8 @@ body.light-theme{
   position: relative;
   display: block;
   width: 100%;
-  height: 28rem;
+  /* height: 28rem; */
   padding-top: 70%;
-  /* background: #ffffff; */
 }
 
 .mains .card-recientes{
