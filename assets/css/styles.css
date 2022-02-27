@@ -582,9 +582,16 @@ body.light-theme{
   position: relative;
   display: block;
   width: 100%;
+  height: 28rem;
   padding-top: 70%;
   /* background: #ffffff; */
 }
+
+.mains .card-recientes{
+  width: 100%;
+  height: 17rem;
+}
+
 .mains .card-image img {
   border-radius: 4px;
   display: block;
@@ -620,6 +627,16 @@ body.light-theme{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+  }
+  .mains .recientes {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    /* width: 100%; */
+    height: 30rem;
+  }
+  .mains .card-recientes{
+    width: 100%;
+    height: 22rem;
   }
 }
 
